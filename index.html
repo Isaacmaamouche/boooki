@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+      integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+      crossorigin="anonymous"
+    />
+    <title>Booki</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo/Booki.png" alt="logo booki" />
+      <nav>
+        <ul>
+          <li class="nav_active"><a href="#result_section">Hébergements</a></li>
+          <li><a href="#activity_section">Activités</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="research">
+          <h1>Trouvez votre Hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+          <form>
+            <div class="form_content">
+              <input
+                type="text"
+                id="city_search"
+                placeholder="Marseille, France"
+              />
+              <button type="button">Rechercher</button>
+            </div>
+          </form>
+        </div>
+        <div class="filters">
+          <div class="filters_options">
+            <h1>Filtres</h1>
+
+            <input type="checkbox" name="economique" id="economique" />
+            <label for="economique" class="filter"> Economique </label>
+
+            <input type="checkbox" name="familial" id="familial" />
+            <label for="familial" class="filter"> Familial </label>
+
+            <input type="checkbox" name="romantique" id="romantique" />
+            <label for="romantique" class="filter"> Romantique </label>
+
+            <input type="checkbox" name="animeaux" id="animeaux" />
+            <label for="animeaux" class="filter"> Animeaux autorisés </label>
+          </div>
+          <p class="results_info">Plus de 5oo logements sont disponibles</p>
+        </div>
+      </section>
+      <section class="result" id="result_section">
+        <div class="result_list">
+          <h1>Hébergements à Marseille</h1>
+          <div class="list">
+            <a href="#">
+              <div class="v_card">
+                <div class="v_card_img">
+                  <img
+                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2>Auberge La canebière</h2>
+                <p class="description">Nuit à partir de</p>
+                <span class="rating"></span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="v_card">
+                <div class="v_card_img">
+                  <img
+                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2>Auberge La canebière</h2>
+                <p class="description">Nuit à partir de</p>
+                <span class="rating"></span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="v_card">
+                <div class="v_card_img">
+                  <img
+                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2>Auberge La canebière</h2>
+                <p class="description">Nuit à partir de</p>
+                <span class="rating"></span>
+              </div>
+            </a>
+          </div>
+
+          <p class="more_results"><a href="#">Afficher plus</a></p>
+        </div>
+        <div class="popular">
+          <h1>Les plus populaires</h1>
+          <div class="list">
+            <a href="#">
+              <div class="h_card">
+                <div class="h_card_img">
+                  <img
+                    src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    srcset="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000W, ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2000W,./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000W,./images/hebergements/1_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 500W"
+                    alt=""
+                  />
+                </div>
+                <div class="h_card_info">
+                  <h2>Auberge La canebière</h2>
+                  <p class="description">Nuit à partir de</p>
+                  <span class="rating"></span>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="h_card">
+                <div class="h_card_img">
+                  <img
+                    src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    srcset="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000W, ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2000W,./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000W,./images/hebergements/1_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 500W"
+                    alt=""
+                  />
+                </div>
+                <div class="h_card_info">
+                  <h2>Auberge La canebière</h2>
+                  <p class="description">Nuit à partir de</p>
+                  <span class="rating"></span>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="h_card">
+                <div class="h_card_img">
+                  <img
+                    src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    srcset="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000W, ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2000W,./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000W,./images/hebergements/1_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 500W"
+                    alt=""
+                  />
+                </div>
+                <div class="h_card_info">
+                  <h2>Auberge La canebière</h2>
+                  <p class="description">Nuit à partir de</p>
+                  <span class="rating"></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="activity" id="activity_section">
+        <h1>Activités à Marseille</h1>
+        <div class="activity_display">
+          <div class="activity_card activity_2r">
+            <a href="#">
+              <div class="activity_card_img">
+                <img
+                  src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <h2>Auberge La canebière</h2>
+            </a>
+          </div>
+
+          <div class="double_card">
+            <div class="activity_card activity_1r">
+              <a href="#">
+                <div class="activity_card_img">
+                  <img
+                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2>Auberge La canebière</h2>
+              </a>
+            </div>
+            <div class="activity_card activity_1r">
+              <a href="#">
+                <div class="activity_card_img">
+                  <img
+                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2>Auberge La canebière</h2>
+              </a>
+            </div>
+          </div>
+
+          <div class="activity_card activity_2r">
+            <a href="#">
+              <div class="activity_card_img">
+                <img
+                  src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <h2>Auberge La canebière</h2>
+            </a>
+          </div>
+
+          <div class="double_card">
+            <div class="activity_card activity_1r">
+              <a href="#">
+                <div class="activity_card_img">
+                  <img
+                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2>Auberge La canebière</h2>
+              </a>
+            </div>
+            <div class="activity_card activity_1r">
+              <a href="#">
+                <div class="activity_card_img">
+                  <img
+                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <h2>Auberge La canebière</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="content">
+        <div class="about">
+          <h1>A propos</h1>
+          <p>Fonctionnement du site</p>
+          <p>Fonctionnement du site</p>
+          <p>Fonctionnement du site</p>
+        </div>
+        <div class="hosting">
+          <h1>A propos</h1>
+          <p>Fonctionnement du site</p>
+          <p>Fonctionnement du site</p>
+          <p>Fonctionnement du site</p>
+        </div>
+        <div class="assitance">
+          <h1>A propos</h1>
+          <p>Fonctionnement du site</p>
+          <p>Fonctionnement du site</p>
+          <p>Fonctionnement du site</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
