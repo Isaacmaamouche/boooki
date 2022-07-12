@@ -4,7 +4,7 @@
     --secondary_color:#0065fc;
     --secondary-light-color:#DEEBFF;
     --tertiary_color:#F2F2F2;
-    --default-radius:12px;
+    --default-radius:18px;
     --transition:all .3s ease;
     margin: 0;
     padding: 0;
@@ -156,7 +156,7 @@ input:checked+label::after{
 .list{
     display: flex;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .result_list .list {
@@ -169,15 +169,15 @@ input:checked+label::after{
 }
 
 .v_card{
-    width: 250px;
-    height:200px
+    width: 300px;
+    height:215px
 }
 .v_card_img {
     height: 60%;
 }
 .v_card, .h_card{
     background-color: white;
-    padding: calc(var(--default-radius)/3);
+    padding: 6px;
     border-radius: var(--default-radius);
 }
 
@@ -186,16 +186,16 @@ input:checked+label::after{
 }
 .v_card img{
     width: 100%;
-    border-top-left-radius: calc(var(--default-radius)/2);
-    border-top-right-radius: calc(var(--default-radius)/2);
+    border-top-left-radius: calc(var(--default-radius)/1.2);
+    border-top-right-radius: calc(var(--default-radius)/1.2);
 }
 .h_card img {
     height: 100%;
 }
 .h_card_img {
     height: 100%;
-    border-top-left-radius: calc(var(--default-radius)/2);
-    border-bottom-left-radius: calc(var(--default-radius)/2);
+    border-top-left-radius: calc(var(--default-radius)/1.2);
+    border-bottom-left-radius: calc(var(--default-radius)/1.2);
 }
 .h_card_info{
     margin: 0.5rem;
