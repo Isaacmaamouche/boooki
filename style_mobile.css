@@ -1,2 +1,96 @@
 
-@media (min-width:768px) {}
+@media (max-width:768px) {
+    body{
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 48px;
+    }
+
+    header .logo{
+        width: 120px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        gap:0;
+        justify-content: center;
+    }
+
+    nav ul li{
+        flex: 1 0;
+        justify-content: center;
+    }
+
+    li {
+        --li-border-size:4px;
+        padding-bottom: 8px;
+        border-bottom: var(--li-border-size) solid var(--tertiary-color-dark);
+    }
+    li.nav_active {
+        border-top: none;
+        border-bottom: var(--li-border-size) solid var(--secondary-color);
+    }
+
+    li.nat
+
+    .activity, footer, .hero, .activity{
+        padding: 16px;
+        padding-bottom: 0px;
+    }
+
+    footer{
+        padding-block: 32px;
+    }
+
+    footer div{
+        margin-bottom: 12px;
+    }
+
+    .popular_list, .result_list {
+        border-radius: 0;
+    }
+
+    .result{
+        flex-direction: column-reverse;
+    }
+
+    .popular_list .list {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .result_list{
+        background-color: unset;
+    }
+
+    .result_list .list{
+        flex-direction: column;
+        gap:16px;
+    }
+    .result_list a{
+        flex: unset;
+    }
+
+    .h_card_img{
+        min-width: 35%;
+    }
+
+    div.h_card_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .result_list .list::after{
+        display: none;
+    }
+
+}

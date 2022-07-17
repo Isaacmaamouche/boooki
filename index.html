@@ -13,12 +13,19 @@
       integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
     <title>Booki</title>
   </head>
   <body>
     <!-- HEADER SECTION STARTS HERE -->
     <header>
-      <img class="logo" src="./images/logo/Booki.png" alt="logo booki" />
+      <img class="logo" src="./images/logo/Booki@3x.png" alt="logo booki" />
       <nav>
         <ul>
           <li class="nav_active"><a href="#result_section">Hébergements</a></li>
@@ -36,32 +43,63 @@
           <p>En plein centre ville ou en pleine nature</p>
           <form>
             <div class="form_content">
+              <span class="location-dot">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
               <input
                 type="text"
                 id="city_search"
                 placeholder="Marseille, France"
               />
-              <button type="button">Rechercher</button>
+              <button type="button">
+                <span class="search_icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span class="search_text">Rechercher</span>
+              </button>
             </div>
           </form>
         </div>
         <div class="filters">
           <div class="filters_options">
-            <h1>Filtres</h1>
+            <p>Filtres</p>
 
             <input type="checkbox" name="economique" id="economique" />
-            <label for="economique" class="filter"> Economique </label>
+            <label for="economique" class="filter">
+              <span class="label_icon">
+                <i class="fa-solid fa-money-bill-wave"></i>
+              </span>
+              Économique
+            </label>
 
             <input type="checkbox" name="familial" id="familial" />
-            <label for="familial" class="filter"> Familial </label>
+            <label for="familial" class="filter">
+              <span class="label_icon">
+                <i class="fa-solid fa-child-reaching"></i>
+              </span>
+              Familial
+            </label>
 
             <input type="checkbox" name="romantique" id="romantique" />
-            <label for="romantique" class="filter"> Romantique </label>
+            <label for="romantique" class="filter">
+              <span class="label_icon">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+              Romantique
+            </label>
 
             <input type="checkbox" name="animeaux" id="animeaux" />
-            <label for="animeaux" class="filter"> Animeaux autorisés </label>
+            <label for="animeaux" class="filter">
+              <span class="label_icon">
+                <i class="fa-solid fa-dog"></i>
+              </span>
+              Animeaux autorisés
+            </label>
           </div>
-          <p class="results_info">Plus de 5oo logements sont disponibles</p>
+          <p class="results_info">
+            <span class="info_icon"> <i class="fa-solid fa-info"></i> </span>
+            Plus de 5oo logements sont disponibles
+          </p>
         </div>
       </section>
       <section class="result" id="result_section">
@@ -72,62 +110,193 @@
               <div class="v_card">
                 <div class="v_card_img">
                   <img
+                    src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt="hébergement Auberge La Canebière"
+                  />
+                </div>
+
+                <h2>Auberge La Canebière</h2>
+                <p class="description">Nuit à partir de <strong>25€</strong></p>
+                <span class="rating-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="v_card">
+                <div class="v_card_img">
+                  <img
+                    src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
+                    alt=""
+                  />
+                </div>
+                <h2>Hôtel du port</h2>
+                <p class="description">Nuit à partir de 52<strong>€</strong></p>
+                <span class="rating-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="v_card">
+                <div class="v_card_img">
+                  <img
                     src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
+                    alt=""
+                  />
+                </div>
+                <h2>Hôtel Les mouettes</h2>
+                <p class="description">Nuit à partir de 76<strong>€</strong></p>
+                <span class="rating-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="v_card">
+                <div class="v_card_img">
+                  <img
+                    src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
 
-                <h2>Auberge La canebière</h2>
-                <p class="description">Nuit à partir de</p>
-                <span class="rating"></span>
+                <h2>Hôtel de la mer</h2>
+                <p class="description">Nuit à partir de 46<strong>€</strong></p>
+                <span class="rating-3">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
               </div>
             </a>
             <a href="#">
               <div class="v_card">
                 <div class="v_card_img">
                   <img
-                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
-                <h2>Auberge La canebière</h2>
-                <p class="description">Nuit à partir de</p>
-                <span class="rating"></span>
+                <h2>Auberge Le Panier</h2>
+                <p class="description">Nuit à partir de <strong>23€</strong></p>
+                <span class="rating-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
               </div>
             </a>
             <a href="#">
               <div class="v_card">
                 <div class="v_card_img">
                   <img
-                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
-                <h2>Auberge La canebière</h2>
-                <p class="description">Nuit à partir de</p>
-                <span class="rating"></span>
+                <h2>Hôtel chez Amina</h2>
+                <p class="description">Nuit à partir de 96<strong>€</strong></p>
+                <span class="rating-5">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
               </div>
             </a>
           </div>
 
           <p class="more_results"><a href="#">Afficher plus</a></p>
         </div>
-        <div class="popular">
-          <h1>Les plus populaires</h1>
+        <div class="popular_list">
+          <div class="popular_list_header">
+            <h1>Les plus populaires</h1>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
           <div class="list">
             <a href="#">
               <div class="h_card">
                 <div class="h_card_img">
                   <img
-                    src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                    srcset="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000W, ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2000W,./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000W,./images/hebergements/1_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 500W"
+                    src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
                 <div class="h_card_info">
-                  <h2>Auberge La canebière</h2>
-                  <p class="description">Nuit à partir de</p>
-                  <span class="rating"></span>
+                  <div class="h_card_title">
+                    <h2>Hôtel Le soleil du matin</h2>
+                    <p class="description">
+                      Nuit à partir de 128<strong>€</strong>
+                    </p>
+                  </div>
+                  <span class="rating-5">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
                 </div>
               </div>
             </a>
@@ -135,15 +304,31 @@
               <div class="h_card">
                 <div class="h_card_img">
                   <img
-                    src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                    srcset="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000W, ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2000W,./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000W,./images/hebergements/1_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 500W"
+                    src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
                 <div class="h_card_info">
-                  <h2>Auberge La canebière</h2>
-                  <p class="description">Nuit à partir de</p>
-                  <span class="rating"></span>
+                  <div class="h_card_title">
+                    <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                    <p class="description">
+                      Nuit à partir de 71<strong>€</strong>
+                    </p>
+                  </div>
+                  <span class="rating-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
                 </div>
               </div>
             </a>
@@ -151,15 +336,31 @@
               <div class="h_card">
                 <div class="h_card_img">
                   <img
-                    src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                    srcset="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 4000W, ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 2000W,./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1000W,./images/hebergements/1_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 500W"
+                    src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    srcset="
+                      ./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg   500w,
+                      ./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1000w,
+                      ./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg  2000w,
+                      ./images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
                 <div class="h_card_info">
-                  <h2>Auberge La canebière</h2>
-                  <p class="description">Nuit à partir de</p>
-                  <span class="rating"></span>
+                  <div class="h_card_title">
+                    <h2>Hôtel Tout bleu et Blanc</h2>
+                    <p class="description">
+                      Nuit à partir de 68<strong>€</strong>
+                    </p>
+                  </div>
+                  <span class="rating-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
                 </div>
               </div>
             </a>
@@ -174,11 +375,18 @@
             <a href="#">
               <div class="activity_card_img">
                 <img
-                  src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                  srcset="
+                    ./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg   500w,
+                    ./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1000w,
+                    ./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg  2000w,
+                    ./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 4000w
+                  "
+                  sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                   alt=""
                 />
               </div>
-              <h2>Auberge La canebière</h2>
+              <h2>Vieux Port</h2>
             </a>
           </div>
 
@@ -187,22 +395,36 @@
               <a href="#">
                 <div class="activity_card_img">
                   <img
-                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    srcset="
+                      ./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg   500w,
+                      ./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1000w,
+                      ./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg  2000w,
+                      ./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
-                <h2>Auberge La canebière</h2>
+                <h2>Fort de Pomègues</h2>
               </a>
             </div>
             <div class="activity_card activity_1r">
               <a href="#">
                 <div class="activity_card_img">
                   <img
-                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    srcset="
+                      ./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg   500w,
+                      ./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1000w,
+                      ./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg  2000w,
+                      ./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
-                <h2>Auberge La canebière</h2>
+                <h2>Îles du Frioul</h2>
               </a>
             </div>
           </div>
@@ -211,11 +433,18 @@
             <a href="#">
               <div class="activity_card_img">
                 <img
-                  src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                  src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                  srcset="
+                    ./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg   500w,
+                    ./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1000w,
+                    ./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg  2000w,
+                    ./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 4000w
+                  "
+                  sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                   alt=""
                 />
               </div>
-              <h2>Auberge La canebière</h2>
+              <h2>Parc National des Calanques</h2>
             </a>
           </div>
 
@@ -224,22 +453,36 @@
               <a href="#">
                 <div class="activity_card_img">
                   <img
-                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    srcset="
+                      ./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg   500w,
+                      ./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1000w,
+                      ./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg  2000w,
+                      ./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
-                <h2>Auberge La canebière</h2>
+                <h2>Notre-Dame-de-la-Garde</h2>
               </a>
             </div>
             <div class="activity_card activity_1r">
               <a href="#">
                 <div class="activity_card_img">
                   <img
-                    src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    srcset="
+                      ./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg   500w,
+                      ./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1000w,
+                      ./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg  2000w,
+                      ./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 4000w
+                    "
+                    sizes="(min-width:768px) 100vw, (min-width:992px) 33vw, 25vw"
                     alt=""
                   />
                 </div>
-                <h2>Auberge La canebière</h2>
+                <h2>Parc Longchamp</h2>
               </a>
             </div>
           </div>
@@ -254,20 +497,18 @@
         <div class="about">
           <h1>A propos</h1>
           <p>Fonctionnement du site</p>
-          <p>Fonctionnement du site</p>
-          <p>Fonctionnement du site</p>
+          <p>Conditions générales de vente</p>
+          <p>Données et confidentialité</p>
         </div>
         <div class="hosting">
-          <h1>A propos</h1>
-          <p>Fonctionnement du site</p>
-          <p>Fonctionnement du site</p>
-          <p>Fonctionnement du site</p>
+          <h1>Nos hébergements</h1>
+          <p>Charte qualité</p>
+          <p>Soumettre votre hôtel</p>
         </div>
         <div class="assitance">
-          <h1>A propos</h1>
-          <p>Fonctionnement du site</p>
-          <p>Fonctionnement du site</p>
-          <p>Fonctionnement du site</p>
+          <h1>Assistance</h1>
+          <p>Centre d'aide</p>
+          <p>Nous contacter</p>
         </div>
       </div>
     </footer>

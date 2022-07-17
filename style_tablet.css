@@ -1,1 +1,61 @@
-@media (min-width:992px) {}
+@media (max-width:992px) {
+    .research div.form_content {
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+    .research span.location-dot {
+        padding-inline: 24px;
+    }
+
+*   .research input {
+        width: max(300px, 50vw);
+    }
+    .research button {
+        padding-inline: 16px;
+    }
+    .research .search_text{
+        display: none;
+    }
+    .research .search_icon {
+        display: block;
+    }
+
+    .filters_options>p {
+        width: 100%;
+    }
+
+    .filters_options {
+        flex-wrap: wrap;
+        gap: 1rem;
+        --label-size: 50px;
+    }
+
+    .result {
+        gap: 0rem;
+        flex-direction: column;
+    }
+
+    .popular .list {
+        gap: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+
+    .activity_card{
+        width: 100%;
+        flex: unset;
+        height: 200px;
+    }
+    .double_card{
+        gap: 2rem;
+    }
+
+
+               
+
+        
+        
+}
