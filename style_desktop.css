@@ -20,14 +20,17 @@
     --default-radius: 18px;
     --transition: all .3s ease;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     position: relative;
     width: min(90vw, 1500px);
     margin-inline: auto;    
 }
 
-h1{font-size: 20px;}
-h2{font-size: 16px;}
+h1{font-size: 28px;}
+h2{font-size: 20px;}
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -67,7 +70,7 @@ nav ul li{
 }
 
 li.nav_active {
-    border-top: 1px solid var(--secondary-color);
+    border-top: 4px solid var(--secondary-color);
 }
 li.nav_active a{
     color: var(--secondary-color);
@@ -377,7 +380,7 @@ span.rating-4 svg:nth-child(n + 5) {
 }
 
 .activity_card_img{
-    height: calc(100% - 50px);
+    height: calc(100% - 60px);
     width: 100%;
     overflow: hidden;
 }
