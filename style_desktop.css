@@ -29,8 +29,9 @@ body{
     margin-inline: auto;    
 }
 
-h1{font-size: 28px;}
-h2{font-size: 20px;}
+h1{font-size: 36px;}
+h2{font-size: 28px;}
+h3{font-size: 20px;}
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -223,7 +224,7 @@ label .label_icon {
     flex-direction: row;
 }
 
-.result_list>h1{
+.result_list>h2{
     margin-bottom: 16px;
 }
 
@@ -334,7 +335,7 @@ span.rating-4 svg:nth-child(n + 5) {
 /* rating-5 don't need a selector as all icons are blue */
 
 
-.v_card h2, .v_card p, .v_card span, .h_card h2,
+.v_card h3, .v_card p, .v_card span, .h_card h3,
 .h_card p,
 .h_card span{
     padding-bottom: 3px;
@@ -345,7 +346,7 @@ span.rating-4 svg:nth-child(n + 5) {
     margin-top: 32px;
 }
 
-.activity>h1{
+.activity>h2{
     margin-bottom: 12px;
 }
 .activity_display{
@@ -368,7 +369,7 @@ span.rating-4 svg:nth-child(n + 5) {
     justify-content: space-between;
     flex: 1 0;
 }
-.activity_card h2{
+.activity_card h3{
     margin: 8px;
 }
 .activity_2r{
