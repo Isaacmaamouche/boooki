@@ -39,8 +39,6 @@
         border-bottom: var(--li-border-size) solid var(--secondary-color);
     }
 
-    li.nat
-
     .activity, footer, .hero, .activity{
         padding: 16px;
         padding-bottom: 0px;
@@ -92,5 +90,4 @@
     .result_list .list::after{
         display: none;
     }
-
 }
