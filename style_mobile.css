@@ -49,7 +49,7 @@
     }
 
     footer div{
-        margin-bottom: 12px;
+        margin-bottom: 18px;
     }
 
     .popular_list, .result_list {
@@ -58,7 +58,14 @@
 
     .result{
         flex-direction: column-reverse;
+        padding-bottom: 0px;
     }
+
+        .result_list,
+        .popular_list {
+            padding: 32px;
+            padding-bottom: 12px;
+        }
 
     .popular_list .list {
         flex-direction: column;
