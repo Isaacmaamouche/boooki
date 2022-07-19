@@ -8,15 +8,25 @@
         padding-inline: 24px;
     }
 
-*   .research input {
-        width: max(300px, 50vw);
+   .research input {
+        width
+        : max(300px, 50vw);
     }
+
+    .research span.location-dot {
+        padding-inline: 18px;
+    }
+
     .research button {
-        padding-inline: 16px;
+        padding-inline: 18px;
+        border-top-left-radius: calc(var(--default-radius)/2);  
+        border-bottom-left-radius: calc(var(--default-radius)/2);
     }
+
     .research .search_text{
         display: none;
     }
+
     .research .search_icon {
         display: block;
     }

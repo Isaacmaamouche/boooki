@@ -12,7 +12,7 @@
     }
 
     header .logo{
-        width: 120px;
+        width: 100px;
     }
 
     nav {
@@ -39,17 +39,20 @@
         border-bottom: var(--li-border-size) solid var(--secondary-color);
     }
 
+    .research{
+        margin-top:32px;
+    }
+
+    .research form{
+        margin-block: 32px;
+    }
+
+    .results_info{
+        margin-block: 16px;
+    }
+
     .activity, footer, .hero, .activity{
-        padding: 16px;
-        padding-bottom: 0px;
-    }
-
-    footer{
-        padding-block: 32px;
-    }
-
-    footer div{
-        margin-bottom: 18px;
+        padding-inline: 16px;
     }
 
     .popular_list, .result_list {
@@ -63,8 +66,8 @@
 
         .result_list,
         .popular_list {
-            padding: 32px;
-            padding-bottom: 12px;
+            padding: 24px;
+            padding-bottom: 36px;
         }
 
     .popular_list .list {
@@ -96,5 +99,21 @@
 
     .result_list .list::after{
         display: none;
+    }
+
+    .activity_display, .double_card{
+        gap:16px;
+
+    }
+
+    footer div {
+        margin-bottom: 18px;
+    }
+
+    footer{ 
+        padding-inline: 32px;
+        padding-top: 46px;    
+        padding-bottom: 4px;
+        margin-top: 48px;
     }
 }

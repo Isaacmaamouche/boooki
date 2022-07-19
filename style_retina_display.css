@@ -1,6 +1,10 @@
 @media only screen and (min-resolution: 92dpi) {
 
     /* Retina-specific stuff here */
+
+    :root{
+        --default-radius: 24px;
+    }
     * {
         font-size: 14px;
     }
