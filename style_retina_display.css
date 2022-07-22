@@ -6,7 +6,7 @@
         --default-radius: 24px;
     }
     * {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     header {
@@ -29,30 +29,30 @@
         padding-inline: 18px;
     }
 
-    .results_info {
-        font-size: 12px;
-    }
-
     .filters_options {
         gap: 24px;
     }
 
-    .result_list,
-    .popular_list {
-        padding: 32px;
-    }
-
     .result {
-        gap: 32px;
-        padding-bottom: 32px;
+        gap:34px;
     }
 
     .result_list a {
         flex: 1 0 250px;
     }
 
+    .result_list, .popular_list{
+        margin: 0px;
+    }
+
     .v_card, .h_card{
         padding: 4px;
+    }
+
+    @media (max-width:768px) {
+        .result_list a {
+            flex: unset;
+        }
     }
 
 }

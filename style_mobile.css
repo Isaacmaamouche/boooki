@@ -1,119 +1,137 @@
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
 
-@media (max-width:768px) {
-    body{
-        width: 100%;
-    }
+  h1 {
+    font-size: 22px;
+  }
 
-    header{
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 48px;
-    }
+  h3 {
+    font-size: 18px;
+  }
 
-    header .logo{
-        width: 100px;
-    }
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 110px;
+  }
 
-    nav {
-        width: 100%;
-    }
+  header .logo {
+    width: 100px;
+    margin-top: 12px;
+  }
 
-    nav ul {
-        gap:0;
-        justify-content: center;
-    }
+  nav {
+    width: 100%;
+  }
 
-    nav ul li{
-        flex: 1 0;
-        justify-content: center;
-    }
+  nav ul {
+    gap: 0;
+    justify-content: center;
+  }
 
-    li {
-        --li-border-size:4px;
-        padding-bottom: 8px;
-        border-bottom: var(--li-border-size) solid var(--tertiary-color-dark);
-    }
-    li.nav_active {
-        border-top: none;
-        border-bottom: var(--li-border-size) solid var(--secondary-color);
-    }
+  nav ul li {
+    flex: 1 0;
+    justify-content: center;
+  }
 
-    .research{
-        margin-top:32px;
-    }
+  li {
+    --li-border-size: 4px;
+    padding-bottom: 8px;
+    border-bottom: var(--li-border-size) solid var(--tertiary-color-dark);
+  }
+  li.nav_active {
+    border-top: none;
+    border-bottom: var(--li-border-size) solid var(--secondary-color);
+  }
 
-    .research form{
-        margin-block: 32px;
-    }
+  .research {
+    margin-top: 32px;
+  }
 
-    .results_info{
-        margin-block: 16px;
-    }
+  .research form {
+    margin-block: 32px;
+  }
 
-    .activity, footer, .hero, .activity{
-        padding-inline: 16px;
-    }
+  .results_info {
+    font-size: 16px;
+    margin-block: 16px;
+  }
 
-    .popular_list, .result_list {
-        border-radius: 0;
-    }
+  .activity,
+  footer,
+  .hero,
+  .activity {
+    padding-inline: 16px;
+  }
 
-    .result{
-        flex-direction: column-reverse;
-        padding-bottom: 0px;
-    }
+  .popular_list,
+  .result_list {
+    border-radius: 0;
+  }
 
-        .result_list,
-        .popular_list {
-            padding: 24px;
-            padding-bottom: 36px;
-        }
+  .result {
+    flex-direction: column-reverse;
+    padding-bottom: 0px;
+  }
 
-    .popular_list .list {
-        flex-direction: column;
-        gap: 16px;
-    }
+  .result_list,
+  .popular_list {
+    padding-block: 24px;
+    padding-bottom: 36px;
+  }
 
-    .result_list{
-        background-color: unset;
-    }
+  .popular_list .list {
+    flex-direction: column;
+    gap: 16px;
+  }
 
-    .result_list .list{
-        flex-direction: column;
-        gap:16px;
-    }
-    .result_list a{
-        flex: unset;
-    }
+  .result_list {
+    background-color: unset;
+  }
 
-    .h_card_img{
-        min-width: 35%;
-    }
+  .result_list .list {
+    flex-direction: column;
+    gap: 16px;
+  }
 
-    div.h_card_info{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .result_list a {
+    flex: unset;
+  }
 
-    .result_list .list::after{
-        display: none;
-    }
+  .more_results {
+    margin-top: 32px;
+  }
 
-    .activity_display, .double_card{
-        gap:16px;
+  .h_card_img {
+    min-width: 35%;
+  }
 
-    }
+  div.h_card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    footer div {
-        margin-bottom: 18px;
-    }
+  .result_list .list::after {
+    display: none;
+  }
 
-    footer{ 
-        padding-inline: 32px;
-        padding-top: 46px;    
-        padding-bottom: 4px;
-        margin-top: 48px;
-    }
+  .activity_display,
+  .double_card {
+    gap: 16px;
+  }
+
+  footer div {
+    margin-bottom: 18px;
+  }
+
+  footer {
+    padding-inline: 32px;
+    padding-top: 46px;
+    padding-bottom: 4px;
+    margin-top: 48px;
+  }
 }
