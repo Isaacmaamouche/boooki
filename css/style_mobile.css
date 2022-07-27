@@ -42,10 +42,6 @@
     padding-bottom: 8px;
     border-bottom: var(--li-border-size) solid var(--tertiary-color-dark);
   }
-  li.nav_active {
-    border-top: none;
-    border-bottom: var(--li-border-size) solid var(--secondary-color);
-  }
 
   .research {
     margin-top: 32px;

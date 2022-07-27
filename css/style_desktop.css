@@ -81,13 +81,15 @@ nav ul li {
   align-items: flex-end;
   padding: 16px;
   text-align: center;
+  border-top: 0px solid var(--secondary-color);
+  transition: var(--transition);
 }
 
-li.nav_active {
+li:hover {
   border-top: 2px solid var(--secondary-color);
 }
 
-li.nav_active a {
+li:hover a {
   color: var(--secondary-color);
 }
 
@@ -489,5 +491,12 @@ footer .content div * {
 @media (hover: none) {
   label:hover::after {
     left: -100%;
+  }
+  li:hover {
+    border-top: 0px solid var(--secondary-color);
+  }
+
+  li:hover a {
+    color: var(--primary-color);
   }
 }
